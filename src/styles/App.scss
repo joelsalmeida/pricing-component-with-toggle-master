@@ -2,4 +2,73 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
+  background-color: $lightSec;
+}
+
+.plan-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: $graySec;
+  background-color: white;
+  width: 350px;
+  height: 455px;
+  border-radius: 5px;
+  font-weight: 700;
+
+  &__type {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  &__price {
+    font-size: 3rem;
+    margin-bottom: 2.5rem;
+    display: inline-flex;
+    .price-span {
+      font-size: 2rem;
+      margin-right: 0.5rem;
+    }
+  }
+
+  &__description-container {
+    width: 285px;
+    margin-bottom: 2rem;
+    border-top: 1px solid $lightSec;
+  }
+
+  &__description {
+    width: 100%;
+    max-width: 285px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid $lightSec;
+  }
+}
+
+.hollow-button {
+  width: 100%;
+  max-width: 285px;
+  max-height: 43px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem;
+  margin-bottom: 1.8rem;
+  border-radius: 5px;
+  color: $lightPri;
+  background-image: linear-gradient(90deg, $gradientPri, $gradientSec);
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  cursor: pointer;
+
+  &:hover {
+    color: $gradientPri;
+    background-color: $lightPri;
+    border: 2px solid $gradientPri;
+    background-image: none;
+  }
 }
